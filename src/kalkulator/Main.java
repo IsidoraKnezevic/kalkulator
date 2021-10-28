@@ -24,8 +24,8 @@ public class Main {
 			
 			int z=0;
 			switch(kom[1]) {
-			case "+":
-				z=x+y;
+			case "-":
+				z=sub(x,y);
 				break;
 			default:
 				System.out.println("Operand nije podrzan");
@@ -35,6 +35,10 @@ public class Main {
 			System.out.println("Rezultat "+z);
 			
 		}while(!komanda.equals("End"));
+	}
+	
+	public static int sub(int a, int b) {
+		return a-b;
 	}
 
 }
