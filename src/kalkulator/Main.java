@@ -19,6 +19,20 @@ public class Main {
 			 if(kom.length!=3) {
 				 continue;
 			 }
+			int x = Integer.parseInt(kom[0]);
+			int y = Integer.parseInt(kom[2]);
+			
+			int z=0;
+			switch(kom[1]) {
+			case "+":
+				z=x+y;
+				break;
+			default:
+				System.out.println("Operand nije podrzan");
+				continue;
+			}
+			
+			System.out.println("Rezultat "+z);
 			
 		}while(!komanda.equals("End"));
 	}
