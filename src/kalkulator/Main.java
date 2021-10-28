@@ -24,8 +24,12 @@ public class Main {
 			
 			int z=0;
 			switch(kom[1]) {
+
 			case "+":
 				z=addition(x,y);
+				break;
+			case "-":
+				z=sub(x,y);
 				break;
 			default:
 				System.out.println("Operand nije podrzan");
@@ -37,7 +41,14 @@ public class Main {
 		}while(!komanda.equals("End"));
 	}
 	
+
 	public static int addition(int a, int b) {
 		return a+b;
 	}
+
+	public static int sub(int a, int b) {
+		return a-b;
+	}
+
+
 }
